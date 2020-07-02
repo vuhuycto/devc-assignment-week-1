@@ -42,7 +42,6 @@
 	const guessButton = document.getElementById('guessButton');
 	guessButton.addEventListener('click', function () {
 		const guessNumber = document.getElementById('number').value;
-		console.log(guessNumber);
 		app.guess(guessNumber);
 	});
 })();
