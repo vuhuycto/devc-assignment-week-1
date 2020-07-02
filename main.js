@@ -3,8 +3,8 @@
 	const _tries = Symbol();
 
 	class GuessingGame {
-		constructor(number) {
-			this[_rightNumber] = number;
+		constructor() {
+			this[_rightNumber] = Math.floor(Math.random() * 99);
 			this[_tries] = 10;
 		}
 
@@ -37,7 +37,7 @@
 		}
 	}
 
-	const app = new GuessingGame(Math.floor(Math.random() * 99));
+	const app = new GuessingGame();
 
 	const guessButton = document.getElementById('guessButton');
 	guessButton.addEventListener('click', function () {
